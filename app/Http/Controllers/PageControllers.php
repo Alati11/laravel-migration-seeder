@@ -9,9 +9,10 @@ class PageController extends Controller
 {
     public function index()
     {
-        // elenco dei servizi dal DB
-        $Trains = TRain::all(); // SELECT * FROM `books`
-        // dd($books);
+        
+        $Trains = TRain::all(); // SELECT * FROM `trains`
+        dd($Trains);
+        
 
         return view('guest.index', compact('books'));
     }  
