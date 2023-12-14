@@ -2,25 +2,24 @@
 
 @section('content')
 
-    <h1>La mia app</h1>
 
     <section>
         <h2>Il nostro viaggio</h2>
         <div class="container mt-3">
             <div class="row">
-                @foreach ($trains as $train)
+                @forelse ($trains as $train)
 
                         <div class="col">
                             <p>{{ $train->azienda }}</p>
-                            <p>{{ $train->stazione_di_partenza }}</p>
-                            <p>{{ $train->stazione_di_arrivo }}</p>
-                            <p>{{ $train->orario_di_partenza }}</p>
-                            <p>{{ $train->orario_di_arrivo }}</p>
-                            <p>{{ $train->created_at }}</p>
-                            <p>{{ $train->updated_at }}</p>
+                            <p>{{ $train->stazione_di_partenza }} - {{ $train->stazione_di_arrivo }}</p>
+                            <p>{{ $train->orario_di_partenza }} - {{ $train->orario_di_arrivo }}</p>
                         </div> 
+                @empty
+                        <div>
+                            Nessun treno disponibile
+                        </div>        
                    
-                @endforeach
+                @endforelse
             </div>
         </div>
     </section>
