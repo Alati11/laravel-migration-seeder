@@ -10,8 +10,8 @@ class PageController extends Controller
     public function index()
     {
         
-        $Trains = Train::all(); // SELECT * FROM `trains`
-        dd($Trains);
+        $trains = train::all(); 
+        dump($trains);
 
         return view('home', compact('trains'));
     }  

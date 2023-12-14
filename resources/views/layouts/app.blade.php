@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>migration</title>
+    <title>Migration</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +16,27 @@
 </head>
 
 <body>
+  <header>
+      <nav>
+          <li>
+              <a href="">Travel</a>
+          </li>
+          <li>
+            <a href="">About</a>
+         </li>
+        <li>
+            <a href="">Contact</a>
+        </li>
+      </nav>
+  </header>
 
-    <main class="bg-light">
-      @yield('content')
-    </main>
+  <main>
+        @yield('content')
+  </main>
 
+
+  <footer>
+      App by Giuseppe Alati
+  </footer>
 </body>
-
 </html>
