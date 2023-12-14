@@ -16,20 +16,6 @@
 </head>
 
 <body>
-  <header>
-      <nav>
-          <li>
-              <a href="">Travel</a>
-          </li>
-          <li>
-            <a href="">About</a>
-         </li>
-        <li>
-            <a href="">Contact</a>
-        </li>
-      </nav>
-  </header>
-
   <main>
         @yield('content')
   </main>
